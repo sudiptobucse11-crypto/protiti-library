@@ -1,124 +1,768 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>প্রতীতি লাইব্রেরী - জ্ঞানের আলোয় আলোকিত ভবিষ্যৎ</title>
-    <!-- এসইও মেটা ট্যাগস -->
-    <meta name="description" content="প্রতীতি লাইব্রেরী - একটি আধুনিক, প্রফেশনাল এবং সম্পূর্ণ বাংলা লাইব্রেরী ম্যানেজমেন্ট ওয়েবসাইট। যেখানে আপনি পাবেন বাংলা সাহিত্যের সেরা বইয়ের সংগ্রহ।">
-    <meta name="keywords" content="লাইব্রেরী, লাইব্রেরী ম্যানেজমেন্ট, বই, বাংলা বই, সদস্য নিবন্ধন, প্রতীতি লাইব্রেরী">
-    <meta name="author" content="প্রতীতি লাইব্রেরী">
-    
-    <!-- ফন্ট অসম আইকন লিংক -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- কাস্টম সিএসএস -->
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>স্পিকার আঃ জব্বার খান স্মৃতি পাবলিক লাইব্রেরি</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="স্পিকার আঃ জব্বার খান স্মৃতি পাবলিক লাইব্রেরি, ভূতেরদিয়া, বাবুগঞ্জ, বরিশাল। আধুনিক ডিজিটাল লাইব্রেরি ম্যানেজমেন্ট সিস্টেম।" />
+  <meta name="keywords" content="লাইব্রেরি, পাবলিক লাইব্রেরি, বরিশাল, বাবুগঞ্জ, ডিজিটাল লাইব্রেরি" />
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- হেডার নেভিগেশন বার -->
-    <header>
-        <div class="container header-container">
-            <!-- লোগো এবং নাম -->
-            <a href="#/" class="logo-area">
-                <img src="assets/logo.png" alt="প্রতীতি লাইব্রেরী লোগো" class="logo-img">
-                <div class="logo-text">
-                    প্রতীতি লাইব্রেরী
-                    <span>Protiti Library</span>
+
+  <!-- টোস্ট নোটিফিকেশন কন্টেইনার -->
+  <div id="toast-container"></div>
+
+  <!-- নেভিগেশন বার -->
+  <header>
+    <div class="nav-container">
+      <a href="#home" class="logo" id="nav-logo">
+        <i data-lucide="book-open"></i>
+        <span>লাইব্রেরি</span>
+      </a>
+
+      <div class="menu-toggle" id="mobile-menu-btn">
+        <i data-lucide="menu"></i>
+      </div>
+
+      <ul class="nav-links" id="nav-menu">
+        <!-- জাভাস্ক্রিপ্ট দ্বারা গতিশীলভাবে লোড করা হবে -->
+      </ul>
+    </div>
+  </header>
+
+  <!-- প্রধান কন্টেন্ট এরিয়া (SPA Views) -->
+  <main id="app-container">
+
+    <!-- ================= হোম পেজ ভিউ ================= -->
+    <section id="home-route" class="route-section active">
+      <!-- হিরো সেকশন -->
+      <div class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">স্পিকার আঃ জব্বার খান স্মৃতি পাবলিক লাইব্রেরি</h1>
+          <p class="hero-subtitle">
+            জ্ঞানের আলোয় উদ্ভাসিত হোক আপনার ভবিষ্যৎ। <br />
+            আমাদের সমৃদ্ধ ডিজিটাল সংগ্রহশালা থেকে আপনার প্রিয় বইটি খুঁজে নিন, পড়ুন এবং নিজেকে সমৃদ্ধ করুন।
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" onclick="navigateTo('books')">
+              <i data-lucide="library"></i> বইসমূহ দেখুন
+            </button>
+            <button class="btn btn-secondary" onclick="navigateTo('search')">
+              <i data-lucide="search"></i> বই খুঁজুন
+            </button>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <svg class="hero-svg" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="50" y="320" width="400" height="20" rx="5" fill="#2a5298" />
+            <rect x="70" y="140" width="45" height="180" rx="3" fill="#ff6b6b" />
+            <rect x="120" y="100" width="50" height="220" rx="3" fill="#00c6ff" />
+            <rect x="175" y="180" width="40" height="140" rx="3" fill="#ff5e62" />
+            <path d="M225 120 L260 150 L260 320 L225 320 Z" fill="#2ecc71" />
+            <rect x="270" y="80" width="55" height="240" rx="3" fill="#f1c40f" />
+            <rect x="330" y="160" width="45" height="160" rx="3" fill="#8e2de2" />
+            <rect x="380" y="120" width="40" height="200" rx="3" fill="#e65c00" />
+            <line x1="80" y1="160" x2="105" y2="160" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+            <line x1="130" y1="120" x2="160" y2="120" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+            <line x1="280" y1="100" x2="315" y2="100" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- লাইব্রেরি পরিচিতি কার্ড -->
+      <div class="glass-card" style="margin-bottom: 2rem; padding: 1.5rem 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: space-between;">
+          <div>
+            <h3 style="color: #00c6ff; margin-bottom: 0.25rem;">🏛️ স্পিকার আঃ জব্বার খান স্মৃতি পাবলিক লাইব্রেরি</h3>
+            <p style="color: var(--text-muted);">স্থাপিত: ০১-০১-২০০১ খ্রি.</p>
+            <p style="color: var(--text-muted);">
+              <i data-lucide="map-pin" style="display: inline-block; vertical-align: middle; width: 18px; height: 18px;"></i>
+              গ্রাম: ভূতেরদিয়া, ডাকঘর: ভূতেরদিয়া, উপজেলা: বাবুগঞ্জ, জেলা: বরিশাল
+            </p>
+            <p style="color: var(--text-muted);">
+              <i data-lucide="mail" style="display: inline-block; vertical-align: middle; width: 18px; height: 18px;"></i>
+              ইমেইল: sajkspla@gmail.com
+            </p>
+          </div>
+          <div style="text-align: right;">
+            <p style="font-weight: 600;">প্রতিষ্ঠাতা:</p>
+            <p>জনাব মোঃ নরুল ইসলাম (মানিক) মৃধা</p>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">বিশিষ্ট সমাজ সেবক</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- জমিদাতা সদস্যবৃন্দ -->
+      <div class="glass-card" style="margin-bottom: 2rem; padding: 1.5rem 2rem;">
+        <h3 style="color: #00c6ff; margin-bottom: 1rem;">🤝 জমিদাতা সদস্যগণ</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
+          <div><strong>১.</strong> জনাব মোঃ রফিকুল ইসলাম (রত্তন) মৃধা — বিশিষ্ট সমাজ সেবক</div>
+          <div><strong>২.</strong> জনাব মোঃ হাবিবুর রহমান মৃধা — সাবেক প্রধান শিক্ষক, সরকারি প্রাথমিক বিদ্যালয় ও সভাপতি, উপজেলা সরকারি প্রাথমিক শিক্ষক সমিতি, বাবুগঞ্জ, বরিশাল</div>
+          <div><strong>৩.</strong> জনাব মোঃ আবদুর রব মৃধা — বিশিষ্ট ব্যবসায়ী</div>
+          <div><strong>৪.</strong> বীরমুক্তিযোদ্ধা মোঃ সাইদুর রহমান মৃধা — সাবেক ভারপ্রাপ্ত প্রধান শিক্ষক, ভূতেরদিয়া মাধ্যমিক বিদ্যালয়</div>
+          <div><strong>৫.</strong> জনাব মোঃ জাহাঙ্গীর হোসেন মৃধা — সাবেক চেয়ারম্যান, ২নং কেদারপুর ইউনিয়ন পরিষদ</div>
+          <div><strong>৬.</strong> জনাব মহিউদ্দিন আহম্মেদ (পনু) মৃধা — বিশিষ্ট সমাজ সেবক</div>
+        </div>
+      </div>
+
+      <!-- পরিসংখ্যান গ্রিড -->
+      <div class="stats-grid" id="home-stats">
+        <!-- dynamic counters in app.js -->
+      </div>
+
+      <!-- জনপ্রিয় বই সমূহ -->
+      <div class="section-header">
+        <h2 class="section-title">জনপ্রিয় বইসমূহ</h2>
+        <button class="btn btn-secondary" onclick="navigateTo('books')">সব দেখুন <i data-lucide="arrow-right"></i></button>
+      </div>
+      <div class="book-shelf" id="featured-books">
+        <!-- dynamic load -->
+      </div>
+
+      <!-- নতুন যুক্ত বই সমূহ -->
+      <div class="section-header">
+        <h2 class="section-title">নতুন বইসমূহ</h2>
+      </div>
+      <div class="book-shelf" id="new-books">
+        <!-- dynamic load -->
+      </div>
+    </section>
+
+    <!-- ================= আমাদের সম্পর্কে পেজ ভিউ ================= -->
+    <section id="about-route" class="route-section">
+      <div class="glass-card">
+        <h2 class="section-title" style="margin-bottom: 1.5rem;">আমাদের সম্পর্কে</h2>
+        <p style="margin-bottom: 1.5rem;">
+          <strong>স্পিকার আঃ জব্বার খান স্মৃতি পাবলিক লাইব্রেরি</strong> ভূতেরদিয়া, বাবুগঞ্জ, বরিশাল-এ অবস্থিত একটি জনহিতৈষী প্রতিষ্ঠান। 
+          ২০০১ সালের ১লা জানুয়ারি প্রতিষ্ঠিত এই লাইব্রেরিটি স্থানীয় জনগণের জ্ঞানচর্চা ও সংস্কৃতি বিকাশে অগ্রণী ভূমিকা পালন করে আসছে। 
+          বিশিষ্ট সমাজসেবক জনাব মোঃ নরুল ইসলাম (মানিক) মৃধা এর প্রতিষ্ঠিত এই লাইব্রেরিটি বর্তমানে ডিজিটাল যুগের উপযোগী একটি আধুনিক গ্রন্থাগার ব্যবস্থাপনা সিস্টেমে রূপান্তরিত হয়েছে।
+        </p>
+        <p style="margin-bottom: 1.5rem;">
+          আমাদের লক্ষ্য হলো বই পড়ার অভ্যাস ও সংস্কৃতির বিকাশ ঘটিয়ে জ্ঞানভিত্তিক সমাজ বিনির্মাণে ভূমিকা রাখা। 
+          প্রযুক্তির ছোঁয়ায় বই সংগ্রহ, আদান-প্রদান এবং সদস্য ব্যবস্থাপনাকে সহজতর করাই আমাদের মূল লক্ষ্য।
+        </p>
+
+        <div class="timeline">
+          <div class="timeline-item left-timeline">
+            <div class="timeline-content">
+              <h3>২০০১</h3>
+              <p>স্পিকার আঃ জব্বার খান স্মৃতি পাবলিক লাইব্রেরি প্রতিষ্ঠিত। প্রাথমিক পর্যায়ে ৫০০ বইয়ের সংগ্রহশালা স্থাপন।</p>
+            </div>
+          </div>
+          <div class="timeline-item right-timeline">
+            <div class="timeline-content">
+              <h3>২০১০</h3>
+              <p>লাইব্রেরি ভবন সম্প্রসারণ ও বইয়ের সংখ্যা ২,০০০-এ উন্নীতকরণ।</p>
+            </div>
+          </div>
+          <div class="timeline-item left-timeline">
+            <div class="timeline-content">
+              <h3>২০২০</h3>
+              <p>ডিজিটালাইজেশন প্রকল্প গ্রহণ ও অনলাইন ক্যাটালগ সিস্টেম চালু।</p>
+            </div>
+          </div>
+          <div class="timeline-item right-timeline">
+            <div class="timeline-content">
+              <h3>২০২৬</h3>
+              <p>আধুনিক ডিজাইন, জরিমানা গণনা ও নোটিফিকেশন সহ সম্পূর্ণ ডিজিটাল লাইব্রেরি ম্যানেজমেন্ট সিস্টেম উন্মোচন।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= বইসমূহ পেজ ভিউ ================= -->
+    <section id="books-route" class="route-section">
+      <div class="section-header">
+        <h2 class="section-title">বইসমূহের তালিকা</h2>
+        <div class="action-buttons">
+          <select class="form-control filter-select" id="books-category-filter" onchange="filterBooksByCategory()">
+            <!-- dynamic load -->
+          </select>
+        </div>
+      </div>
+      <div class="book-shelf" id="books-directory">
+        <!-- dynamic load -->
+      </div>
+    </section>
+
+    <!-- ================= বই অনুসন্ধান পেজ ভিউ ================= -->
+    <section id="search-route" class="route-section">
+      <div class="glass-card" style="margin-bottom: 2rem;">
+        <h2 class="section-title" style="margin-bottom: 1.5rem;">বই অনুসন্ধান</h2>
+        <div class="search-container">
+          <div class="search-input-wrap">
+            <i data-lucide="search"></i>
+            <input type="text" class="form-control" id="search-input" placeholder="বইয়ের নাম, লেখক অথবা ISBN লিখে খুঁজুন..." oninput="handleSearch()">
+          </div>
+          <select class="form-control filter-select" id="search-category-filter" onchange="handleSearch()">
+            <option value="all">সকল ক্যাটাগরি</option>
+            <!-- dynamic -->
+          </select>
+        </div>
+      </div>
+      <div class="book-shelf" id="search-results">
+        <!-- results go here -->
+      </div>
+    </section>
+
+    <!-- ================= সদস্য নিবন্ধন পেজ ভিউ ================= -->
+    <section id="register-route" class="route-section">
+      <div class="auth-wrapper">
+        <div class="glass-card auth-card">
+          <div class="auth-header">
+            <h2>সদস্য নিবন্ধন</h2>
+            <p>লাইব্রেরির নতুন সদস্য হতে ফরমটি পূরণ করুন</p>
+          </div>
+          <form id="register-form" onsubmit="handleRegistration(event)">
+            <div class="form-group">
+              <label for="reg-name">পূর্ণ নাম</label>
+              <input type="text" id="reg-name" class="form-control" required placeholder="আপনার নাম লিখুন">
+            </div>
+            <div class="form-group">
+              <label for="reg-email">ইমেইল ঠিকানা</label>
+              <input type="email" id="reg-email" class="form-control" required placeholder="example@mail.com">
+            </div>
+            <div class="form-group">
+              <label for="reg-phone">মোবাইল নম্বর</label>
+              <input type="tel" id="reg-phone" class="form-control" required placeholder="01XXXXXXXXX">
+            </div>
+            <div class="form-group">
+              <label for="reg-password">পাসওয়ার্ড</label>
+              <input type="password" id="reg-password" class="form-control" required placeholder="••••••••">
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">নিবন্ধন সম্পন্ন করুন</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= লগইন পেজ ভিউ ================= -->
+    <section id="login-route" class="route-section">
+      <div class="auth-wrapper">
+        <div class="glass-card auth-card">
+          <div class="auth-header">
+            <h2>লগইন পোর্টাল</h2>
+            <p>আপনার অ্যাকাউন্টে প্রবেশ করুন</p>
+          </div>
+          <form id="login-form" onsubmit="handleLogin(event)">
+            <div class="form-group">
+              <label for="login-email-phone">ইমেইল বা মেম্বার আইডি</label>
+              <input type="text" id="login-email-phone" class="form-control" required placeholder="admin@library.gov.bd বা M1001">
+            </div>
+            <div class="form-group">
+              <label for="login-password">পাসওয়ার্ড</label>
+              <input type="password" id="login-password" class="form-control" required placeholder="••••••••">
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">প্রবেশ করুন</button>
+          </form>
+
+          <div class="demo-credentials">
+            <h5>ডেমো ক্রেডেনশিয়াল (পরীক্ষার জন্য):</h5>
+            <p><strong>প্রশাসক (Admin):</strong><br>আইডি/ইমেইল: <code>admin</code> | পাসওয়ার্ড: <code>admin123</code></p>
+            <p style="margin-top: 0.5rem;"><strong>সাধারণ সদস্য (Member):</strong><br>আইডি/ইমেইল: <code>M1001</code> | পাসওয়ার্ড: <code>member123</code></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= সদস্য ড্যাশবোর্ড পেজ ভিউ ================= -->
+    <section id="member-dashboard-route" class="route-section">
+      <div class="dashboard-layout">
+        <!-- সাইডবার -->
+        <aside class="sidebar-glass">
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <div style="width: 70px; height: 70px; background: var(--accent-gradient); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 0.5rem;">
+              <i data-lucide="user"></i>
+            </div>
+            <h3 id="member-profile-name">লোডিং...</h3>
+            <p id="member-profile-id" style="color: var(--text-muted); font-size: 0.9rem;">লোডিং...</p>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="active" onclick="switchDashboardPanel('member-overview')"><i data-lucide="grid"></i> ওভারভিউ</li>
+            <li onclick="switchDashboardPanel('member-borrows')"><i data-lucide="book-open"></i> ইস্যুকৃত বইসমূহ</li>
+            <li onclick="switchDashboardPanel('member-fines')"><i data-lucide="dollar-sign"></i> জরিমানা ও হিসাব</li>
+          </ul>
+        </aside>
+
+        <!-- মূল ড্যাশবোর্ড এরিয়া -->
+        <div class="dashboard-content">
+
+          <!-- ওভারভিউ প্যানেল -->
+          <div id="member-overview-panel" class="dashboard-panel active">
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-icon blue"><i data-lucide="book-open"></i></div>
+                <div class="stat-info">
+                  <h3 id="member-stat-issued">০</h3>
+                  <p>বর্তমানে ইস্যুকৃত বই</p>
                 </div>
-            </a>
-            <!-- নেভিগেশন মেনু -->
-            <nav class="nav-menu" id="nav-menu">
-                <a href="#/" class="nav-link" data-route="home">হোম</a>
-                <a href="#/about" class="nav-link" data-route="about">আমাদের সম্পর্কে</a>
-                <a href="#/founder" class="nav-link" data-route="founder">প্রতিষ্ঠাতা</a>
-                <a href="#/books" class="nav-link" data-route="books">বইসমূহ</a>
-                <a href="#/gallery" class="nav-link" data-route="gallery">গ্যালারি</a>
-                <a href="#/contact" class="nav-link" data-route="contact">যোগাযোগ</a>
-                <a href="#/register" class="nav-link" data-route="register">সদস্য নিবন্ধন</a>
-            </nav>
-            <!-- হেডার অ্যাকশন বাটনসমূহ -->
-            <div class="header-actions">
-                <!-- ডার্ক মোড টগল -->
-                <button id="theme-toggle-btn" class="theme-toggle-btn" title="ডার্ক/লাইট মোড টগল করুন">
-                    <i class="fa-solid fa-moon"></i>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon green"><i data-lucide="check-square"></i></div>
+                <div class="stat-info">
+                  <h3 id="member-stat-read">০</h3>
+                  <p>মোট পঠিত বই</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon orange"><i data-lucide="alert-triangle"></i></div>
+                <div class="stat-info">
+                  <h3 id="member-stat-fine">০ ৳</h3>
+                  <p>মোট জরিমানা</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card">
+              <h3 style="margin-bottom: 1rem;">লাইব্রেরি ব্যবহারের সাধারণ নিয়মাবলী</h3>
+              <p>১. একজন সদস্য একসাথে সর্বোচ্চ ২টি বই সংগ্রহে রাখতে পারবেন।<br>
+              ২. প্রতিটি বই ইস্যুর মেয়াদ ১৪ দিন।<br>
+              ৩. মেয়াদ উত্তীর্ণের পর ফেরত না দিলে দৈনিক ৫ টাকা জরিমানা ধার্য করা হবে।</p>
+            </div>
+          </div>
+
+          <!-- ইস্যুকৃত বইসমূহ প্যানেল -->
+          <div id="member-borrows-panel" class="dashboard-panel">
+            <div class="glass-card">
+              <h3 style="margin-bottom: 1rem;">আমার সংগৃহীত বইসমূহ</h3>
+              <div class="table-responsive">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>বইয়ের নাম</th>
+                      <th>ইস্যুর তারিখ</th>
+                      <th>ফেরতের শেষ তারিখ</th>
+                      <th>অবস্থা</th>
+                      <th>জরিমানা</th>
+                    </tr>
+                  </thead>
+                  <tbody id="member-borrows-list">
+                    <!-- dynamic load -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- জরিমানা ও হিসাব প্যানেল -->
+          <div id="member-fines-panel" class="dashboard-panel">
+            <div class="glass-card">
+              <h3 style="margin-bottom: 1rem;">জরিমানার বিবরণ ও পরিশোধ</h3>
+              <div id="member-fine-info-box">
+                <!-- dynamic fine display -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= প্রশাসক ড্যাশবোর্ড পেজ ভিউ ================= -->
+    <section id="admin-dashboard-route" class="route-section">
+      <div class="dashboard-layout">
+        <!-- সাইডবার -->
+        <aside class="sidebar-glass">
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <div style="width: 70px; height: 70px; background: var(--accent-gradient); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 0.5rem;">
+              <i data-lucide="shield"></i>
+            </div>
+            <h3>প্রশাসক প্যানেল</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">সক্রিয় সেশন</p>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="active" onclick="switchAdminPanel('admin-stats')"><i data-lucide="bar-chart-2"></i> লাইব্রেরি পরিসংখ্যান</li>
+            <li onclick="switchAdminPanel('admin-books')"><i data-lucide="book"></i> বইসমূহ ব্যবস্থাপনা</li>
+            <li onclick="switchAdminPanel('admin-members')"><i data-lucide="users"></i> সদস্য তালিকা</li>
+          </ul>
+        </aside>
+
+        <!-- মূল কন্টেন্ট -->
+        <div class="dashboard-content">
+
+          <!-- পরিসংখ্যান প্যানেল -->
+          <div id="admin-stats-panel" class="dashboard-panel active">
+            <div class="stats-grid" id="admin-counters-grid">
+              <!-- counters -->
+            </div>
+
+            <div class="chart-grid">
+              <div class="chart-card">
+                <h3>ক্যাটাগরিভিত্তিক বইয়ের অনুপাত</h3>
+                <div class="chart-container">
+                  <canvas id="categoryChart"></canvas>
+                </div>
+              </div>
+              <div class="chart-card">
+                <h3>বই ইস্যু ও ফেরতের ট্রেন্ড</h3>
+                <div class="chart-container">
+                  <canvas id="borrowChart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- বই ব্যবস্থাপনা প্যানেল -->
+          <div id="admin-books-panel" class="dashboard-panel">
+            <div class="glass-card">
+              <div class="section-header" style="margin-bottom: 1rem;">
+                <h3>সকল বইয়ের তালিকা</h3>
+                <button class="btn btn-primary" onclick="openAddBookModal()">
+                  <i data-lucide="plus-circle"></i> নতুন বই যোগ
                 </button>
-                
-                <!-- এডমিন প্যানেল বাটন -->
-                <a href="#/admin" class="admin-btn" id="admin-nav-btn">
-                    <i class="fa-solid fa-user-shield"></i>
-                    <span>এডমিন প্যানেল</span>
-                </a>
-                <!-- মোবাইল মেনু হ্যামবার্গার বাটন -->
-                <button class="mobile-menu-btn" id="mobile-menu-btn">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+              </div>
+              <div class="table-responsive">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>আইডি</th>
+                      <th>বইয়ের নাম</th>
+                      <th>লেখক</th>
+                      <th>ক্যাটাগরি</th>
+                      <th>কপি সংখ্যা</th>
+                      <th>উপলব্ধ</th>
+                      <th>অ্যাকশন</th>
+                    </tr>
+                  </thead>
+                  <tbody id="admin-books-list">
+                    <!-- books table -->
+                  </tbody>
+                </table>
+              </div>
             </div>
+          </div>
+
+          <!-- সদস্য তালিকা প্যানেল -->
+          <div id="admin-members-panel" class="dashboard-panel">
+            <div class="glass-card">
+              <h3>নিবন্ধিত লাইব্রেরি সদস্যবৃন্দ</h3>
+              <div class="table-responsive" style="margin-top: 1rem;">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>মেম্বার আইডি</th>
+                      <th>নাম</th>
+                      <th>ইমেইল</th>
+                      <th>মোবাইল নম্বর</th>
+                      <th>নিবন্ধনের তারিখ</th>
+                      <th>স্ট্যাটাস</th>
+                      <th>অ্যাকশন</th>
+                    </tr>
+                  </thead>
+                  <tbody id="admin-members-list">
+                    <!-- members table -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
         </div>
-    </header>
-    <!-- ডাইনামিক কন্টেন্ট এরিয়া -->
-    <main id="app-content">
-        <!-- এখানে জাভাস্ক্রিপ্ট এর সাহায্যে বিভিন্ন পেজ রেন্ডার করা হবে -->
-    </main>
-    <!-- টোস্ট নোটিফিকেশন কন্টেইনার -->
-    <div id="toast-container" class="toast-container"></div>
-    <!-- ফুটার সেকশন -->
-    <footer>
-        <div class="container footer-grid">
-            <!-- ১ম কলাম: পরিচিতি -->
-            <div class="footer-col">
-                <div class="logo-area" style="margin-bottom: 15px;">
-                    <img src="assets/logo.png" alt="প্রতীতি লাইব্রেরী লোগো" class="logo-img" style="filter: brightness(0.9) contrast(1.2);">
-                    <div class="logo-text" style="color: #ffffff;">
-                        প্রতীতি লাইব্রেরী
-                        <span style="color: #94a3b8;">Protiti Library</span>
-                    </div>
-                </div>
-                <p class="footer-about-text">
-                    জ্ঞানের আলো ছড়িয়ে দেয়ার এবং একটি আলোকিত সমাজ গঠনের প্রত্যয় নিয়ে ২০১০ সালে প্রতীতি লাইব্রেরীর পথচলা শুরু। আমাদের মূল লক্ষ্য বইয়ের মাধ্যমে মেধা ও মূল্যবোধের বিকাশ ঘটানো।
-                </p>
+      </div>
+    </section>
+
+    <!-- ================= বই ইস্যু পেজ ভিউ ================= -->
+    <section id="issue-route" class="route-section">
+      <div class="auth-wrapper">
+        <div class="glass-card auth-card">
+          <div class="auth-header">
+            <h2>বই ইস্যুকরণ</h2>
+            <p>সদস্যের জন্য নতুন বই ইস্যু করুন</p>
+          </div>
+          <form id="issue-form" onsubmit="handleBookIssue(event)">
+            <div class="form-group">
+              <label for="issue-member-id">সদস্য আইডি (Member ID)</label>
+              <input type="text" id="issue-member-id" class="form-control" required placeholder="যেমন: M1001">
             </div>
-            <!-- ২য় কলাম: লিঙ্কসমূহ -->
-            <div class="footer-col">
-                <h3>গুরুত্বপূর্ণ লিঙ্ক</h3>
-                <ul class="footer-links">
-                    <li><a href="#/">হোম পেজ</a></li>
-                    <li><a href="#/about">আমাদের সম্পর্কে</a></li>
-                    <li><a href="#/founder">প্রতিষ্ঠাতার পরিচিতি</a></li>
-                    <li><a href="#/books">বইয়ের তালিকা</a></li>
-                    <li><a href="#/gallery">ফটো গ্যালারি</a></li>
-                    <li><a href="#/register">নতুন সদস্য নিবন্ধন</a></li>
-                </ul>
+            <div class="form-group">
+              <label for="issue-book-id">বই নির্বাচন</label>
+              <select id="issue-book-select" class="form-control" required>
+                <!-- select options dynamically loaded -->
+              </select>
             </div>
-            <!-- ৩য় কলাম: যোগাযোগ -->
-            <div class="footer-col">
-                <h3>যোগাযোগের ঠিকানা</h3>
-                <div class="footer-contact-info">
-                    <div class="footer-contact-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span>বাড়ি নং ১২, রোড নং ৫, ব্লক-সি, বনানী, ঢাকা-১২১৩</span>
-                    </div>
-                    <div class="footer-contact-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>+৮৮০ ২-৯৮৭৬৫৪৩<br>+৮৮০ ১৭১২৩৪৫৬৭৮</span>
-                    </div>
-                    <div class="footer-contact-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>info@protitilibrary.org<br>contact@protitilibrary.org</span>
-                    </div>
-                </div>
+            <div class="form-group">
+              <label for="issue-date">ইস্যুর তারিখ</label>
+              <input type="date" id="issue-date" class="form-control" required>
             </div>
+            <div class="form-group">
+              <label for="issue-due-date">ফেরতের শেষ তারিখ</label>
+              <input type="date" id="issue-due-date" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">বই ইস্যু করুন</button>
+          </form>
         </div>
-        <!-- ফুটার কপিরাইট এবং ক্রেডিট -->
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; ২০২৬ প্রতীতি লাইব্রেরী। সর্বস্বত্ব সংরক্ষিত।</p>
+      </div>
+    </section>
+
+    <!-- ================= বই ফেরত পেজ ভিউ ================= -->
+    <section id="return-route" class="route-section">
+      <div class="auth-wrapper" style="min-height: auto;">
+        <div class="glass-card auth-card">
+          <div class="auth-header">
+            <h2>বই ফেরত গ্রহণ</h2>
+            <p>ইস্যুকৃত বই জমা ও জরিমানা হিসাব</p>
+          </div>
+          <div class="form-group">
+            <label for="return-search-id">সদস্যের আইডি লিখুন</label>
+            <div style="display:flex; gap: 0.5rem;">
+              <input type="text" id="return-search-id" class="form-control" placeholder="যেমন: M1001">
+              <button class="btn btn-primary" onclick="searchIssuedBooksForReturn()"><i data-lucide="search"></i> খুঁজুন</button>
             </div>
+          </div>
         </div>
-    </footer>
-    <!-- স্ক্রিপ্টস লোড করার ক্রমানুসার -->
-    <script src="database.js"></script>
-    <script src="app.js"></script>
-    <script src="admin.js"></script>
+      </div>
+
+      <!-- অনুসন্ধান ফলাফল -->
+      <div id="return-results-container" style="display:none; margin-top: 2rem;">
+        <div class="glass-card">
+          <h3 style="margin-bottom: 1rem;">সদস্যের চলমান ইস্যুকৃত বইসমূহ</h3>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>লেনদেন আইডি</th>
+                  <th>বইয়ের নাম</th>
+                  <th>ইস্যুর তারিখ</th>
+                  <th>ফেরতের শেষ তারিখ</th>
+                  <th>বিলম্ব দিন</th>
+                  <th>জরিমানা</th>
+                  <th>পদক্ষেপ</th>
+                </tr>
+              </thead>
+              <tbody id="return-issued-list">
+                <!-- results list -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= প্রতিবেদন পেজ ভিউ ================= -->
+    <section id="reports-route" class="route-section">
+      <div class="glass-card">
+        <div class="section-header" style="margin-bottom: 1.5rem;">
+          <h2 class="section-title">লাইব্রেরি প্রতিবেদন ও ইতিহাস</h2>
+          <button class="btn btn-secondary" onclick="window.print()">
+            <i data-lucide="printer"></i> প্রিন্ট করুন
+          </button>
+        </div>
+
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>লেনদেন আইডি</th>
+                <th>সদস্যের নাম (আইডি)</th>
+                <th>বইয়ের নাম</th>
+                <th>ইস্যুর তারিখ</th>
+                <th>ফেরতের তারিখ</th>
+                <th>জরিমানা</th>
+                <th>অবস্থা</th>
+              </tr>
+            </thead>
+            <tbody id="reports-transactions-list">
+              <!-- transactions list -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= যোগাযোগ পেজ ভিউ ================= -->
+    <section id="contact-route" class="route-section">
+      <div class="glass-card">
+        <h2 class="section-title" style="margin-bottom: 2rem;">যোগাযোগ ও মতামত</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+          <div>
+            <h3 style="margin-bottom: 1rem; color: #00c6ff;">অফিসের ঠিকানা</h3>
+            <p><i data-lucide="map-pin" style="display:inline-block; vertical-align:middle; margin-right: 0.5rem; color:#00c6ff;"></i> গ্রাম: ভূতেরদিয়া, ডাকঘর: ভূতেরদিয়া, উপজেলা: বাবুগঞ্জ, জেলা: বরিশাল</p>
+            <p style="margin-top: 0.5rem;"><i data-lucide="phone" style="display:inline-block; vertical-align:middle; margin-right: 0.5rem; color:#00c6ff;"></i> +৮৮০ ২-৯৮৭৬৫৪৩</p>
+            <p style="margin-top: 0.5rem;"><i data-lucide="mail" style="display:inline-block; vertical-align:middle; margin-right: 0.5rem; color:#00c6ff;"></i> sajkspla@gmail.com</p>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #00c6ff;">লাইব্রেরি সময়সূচী</h3>
+            <p>শনিবার - বুধবার: সকাল ৯:০০ - বিকাল ৫:০০<br>
+            বৃহস্পতিবার: সকাল ৯:০০ - দুপুর ২:০০<br>
+            শুক্রবার ও সরকারি ছুটির দিন বন্ধ।</p>
+          </div>
+
+          <form id="contact-form" onsubmit="handleContactSubmit(event)">
+            <h3 style="margin-bottom: 1rem; color: #00c6ff;">আমাদের বার্তা লিখুন</h3>
+            <div class="form-group">
+              <label for="contact-name">আপনার নাম</label>
+              <input type="text" id="contact-name" class="form-control" required placeholder="আপনার নাম লিখুন">
+            </div>
+            <div class="form-group">
+              <label for="contact-email">ইমেইল ঠিকানা</label>
+              <input type="email" id="contact-email" class="form-control" required placeholder="example@mail.com">
+            </div>
+            <div class="form-group">
+              <label for="contact-message">বার্তা</label>
+              <textarea id="contact-message" class="form-control" rows="4" required placeholder="আপনার মতামত বা বার্তা এখানে লিখুন..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">বার্তা পাঠান</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= মডালসমূহ ================= -->
+
+  <!-- বই বিবরণী মডাল -->
+  <div class="modal-overlay" id="book-detail-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-book-title">বইয়ের শিরোনাম</h3>
+        <button class="modal-close" onclick="closeModal('book-detail-modal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="book-detail-grid">
+          <div id="modal-book-cover" style="height: 220px; border-radius: 8px; overflow: hidden; position: relative;">
+            <!-- spine cover preview -->
+          </div>
+          <div>
+            <h4 id="modal-book-author" style="color: #00c6ff; margin-bottom: 0.5rem;">লেখক</h4>
+            <p id="modal-book-desc" style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">বইয়ের বিবরণ</p>
+            <ul class="book-detail-meta-list">
+              <li><span class="label">ক্যাটাগরি:</span> <span id="modal-book-category">...</span></li>
+              <li><span class="label">ISBN:</span> <span id="modal-book-isbn">...</span></li>
+              <li><span class="label">প্রকাশের সাল:</span> <span id="modal-book-year">...</span></li>
+              <li><span class="label">অনুমোদিত কপি:</span> <span id="modal-book-copies">...</span></li>
+              <li><span class="label">উপলব্ধ কপি:</span> <span id="modal-book-available">...</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeModal('book-detail-modal')">বন্ধ করুন</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- বই যোগ/সম্পাদনা মডাল -->
+  <div class="modal-overlay" id="book-edit-modal">
+    <div class="modal-content" style="max-width: 550px;">
+      <div class="modal-header">
+        <h3 id="book-edit-modal-title">নতুন বই যোগ করুন</h3>
+        <button class="modal-close" onclick="closeModal('book-edit-modal')">&times;</button>
+      </div>
+      <form id="book-edit-form" onsubmit="handleBookSubmit(event)">
+        <div class="modal-body">
+          <input type="hidden" id="edit-book-id">
+          <div class="form-group">
+            <label for="edit-title">বইয়ের নাম</label>
+            <input type="text" id="edit-title" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="edit-author">লেখক</label>
+            <input type="text" id="edit-author" class="form-control" required>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label for="edit-category">ক্যাটাগরি</label>
+              <select id="edit-category" class="form-control" required>
+                <!-- categories dynamic -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="edit-isbn">ISBN</label>
+              <input type="text" id="edit-isbn" class="form-control" required>
+            </div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label for="edit-year">প্রকাশের সাল</label>
+              <input type="text" id="edit-year" class="form-control" required placeholder="যেমন: ২০২৬">
+            </div>
+            <div class="form-group">
+              <label for="edit-copies">মোট কপি সংখ্যা</label>
+              <input type="number" id="edit-copies" class="form-control" required min="1">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="edit-desc">বইয়ের বিবরণ</label>
+            <textarea id="edit-desc" class="form-control" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="edit-gradient">কভারের থিম কালার (গ্রেডিয়েন্ট)</label>
+            <select id="edit-gradient" class="form-control" required>
+              <option value="linear-gradient(135deg, #FF6B6B, #556270)">লাল ও ধূসর (Tagore Theme)</option>
+              <option value="linear-gradient(135deg, #1A2980, #26D0CE)">গাঢ় নীল ও ফিরোজা (Classic Theme)</option>
+              <option value="linear-gradient(135deg, #11998e, #38ef7d)">সবুজ গ্রেডিয়েন্ট (Nature/Sci-Fi Theme)</option>
+              <option value="linear-gradient(135deg, #8E2DE2, #4A00E0)">বেগুনী ও রয়্যাল ব্লু (Adventure Theme)</option>
+              <option value="linear-gradient(135deg, #f857a6, #ff5858)">গোলাপী ও লাল (Drama Theme)</option>
+              <option value="linear-gradient(135deg, #3A6073, #3A6073)">স্লেট গ্রে (Mystery/Thriller Theme)</option>
+              <option value="linear-gradient(135deg, #00c6ff, #0072ff)">আকাশী ও নীল (Tech Theme)</option>
+              <option value="linear-gradient(135deg, #e65c00, #F9D423)">কমলা ও হলুদ (Poetry Theme)</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('book-edit-modal')">বাতিল</button>
+          <button type="submit" class="btn btn-primary" id="book-edit-submit-btn">সংরক্ষণ করুন</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ফুটার সেকশন -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4 style="color: #ffffff;">স্পিকার আঃ জব্বার খান স্মৃতি পাবলিক লাইব্রেরি</h4>
+        <p>
+          গ্রাম: ভূতেরদিয়া, ডাকঘর: ভূতেরদিয়া, উপজেলা: বাবুগঞ্জ, জেলা: বরিশাল<br />
+          ইমেইল: sajkspla@gmail.com
+        </p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
+          প্রতিষ্ঠাতা: জনাব মোঃ নরুল ইসলাম (মানিক) মৃধা — বিশিষ্ট সমাজ সেবক
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4 style="color: #ffffff;">সহায়ক লিংক</h4>
+        <ul class="footer-links">
+          <li onclick="navigateTo('home')">হোম</li>
+          <li onclick="navigateTo('books')">বইসমূহ</li>
+          <li onclick="navigateTo('about')">আমাদের সম্পর্কে</li>
+          <li onclick="navigateTo('contact')">যোগাযোগ</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 style="color: #ffffff;">সামাজিক যোগাযোগ</h4>
+        <p>আমাদের কার্যকলাপে যুক্ত থাকুন সামাজিক নেটওয়ার্কের মাধ্যমে:</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><i data-lucide="facebook"></i></a>
+          <a href="#" class="social-icon"><i data-lucide="twitter"></i></a>
+          <a href="#" class="social-icon"><i data-lucide="youtube"></i></a>
+          <a href="#" class="social-icon"><i data-lucide="instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; ২০২৬ স্পিকার আঃ জব্বার খান স্মৃতি পাবলিক লাইব্রেরি। সর্বস্বত্ব সংরক্ষিত।</p>
+      <p>ডিজাইন ও উন্নয়নে: সুদীপ্ত</p>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- JS Code Files -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
