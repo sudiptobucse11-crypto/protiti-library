@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>স্পিকার আঃ জব্বার খান স্মৃতি পাবলিক লাইব্রেরি - আধুনিক লাইব্রেরি ম্যানেজমেন্ট সিস্টেম</title>
+  <title>লাইব্রেরি - আধুনিক লাইব্রেরি ম্যানেজমেন্ট সিস্টেম</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="স্পিকার আঃ জব্বার খান স্মৃতি পাবলিক লাইব্রেরি - বাংলা ভাষার অত্যন্ত আধুনিক, প্রিমিয়াম ও দৃষ্টিনন্দন ডিজিটাল লাইব্রেরি ম্যানেজমেন্ট সিস্টেম। বই অনুসন্ধান, সদস্য নিবন্ধন, ইস্যু ও ফেরত এবং জরিমানার হিসাব রাখুন নিমিষেই।">
-  <meta name="keywords" content="লাইব্রেরি, লাইব্রেরি ম্যানেজমেন্ট, বাংলা লাইব্রেরি, digital library, bangla library, জব্বার খান স্মৃতি লাইব্রেরি">
+  <meta name="description" content="বাংলা ভাষার অত্যন্ত আধুনিক, প্রিমিয়াম ও দৃষ্টিনন্দন ডিজিটাল লাইব্রেরি ম্যানেজমেন্ট সিস্টেম। বই অনুসন্ধান, সদস্য নিবন্ধন, ইস্যু ও ফেরত এবং জরিমানার হিসাব রাখুন নিমিষেই।">
+  <meta name="keywords" content="লাইব্রেরি, লাইব্রেরি ম্যানেজমেন্ট, বাংলা লাইব্রেরি, digital library, bangla library">
   
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -20,7 +20,7 @@
     <div class="nav-container">
       <a href="#home" class="logo" id="nav-logo">
         <i data-lucide="book-open"></i>
-        <span>জব্বার খান স্মৃতি লাইব্রেরি</span>
+        <span>লাইব্রেরি</span>
       </a>
       
       <div class="menu-toggle" id="mobile-menu-btn">
@@ -32,15 +32,15 @@
       </ul>
     </div>
   </header>
-  <!-- প্রধান কন্টেন্ট এরিয়া (SPA Views) -->
+  <!-- প্রধান কন্টেন্ট এরিয়া (SPA Views) -->
   <main id="app-container">
     <!-- ================= হোম পেজ ভিউ ================= -->
     <section id="home-route" class="route-section active">
       <!-- হিরো সেকশন -->
       <div class="hero">
         <div class="hero-content">
-          <h1 class="hero-title">জ্ঞানের আলোয় উদ্ভাসিত হোক আপনার ভবিষ্যৎ</h1>
-          <p class="hero-subtitle">"স্পিকার আঃ জব্বার খান স্মৃতি পাবলিক লাইব্রেরি" তে আপনাকে স্বাগতম। আমাদের সমৃদ্ধ ডিজিটাল সংগ্রহশালা থেকে আপনার প্রিয় বইটি খুঁজে নিন, পড়ুন এবং নিজেকে সমৃদ্ধ করুন। সদস্য হয়ে উপভোগ করুন আধুনিক লাইব্রেরি ম্যানেজমেন্টের সকল সুবিধা।</p>
+          <h1 class="hero-title">জ্ঞানের আলোয় উদ্ভাসিত হোক আপনার ভবিষ্যৎ</h1>
+          <p class="hero-subtitle">"লাইব্রেরি" তে আপনাকে স্বাগতম। আমাদের সমৃদ্ধ ডিজিটাল সংগ্রহশালা থেকে আপনার প্রিয় বইটি খুঁজে নিন, পড়ুন এবং নিজেকে সমৃদ্ধ করুন। সদস্য হয়ে উপভোগ করুন আধুনিক লাইব্রেরি ম্যানেজমেন্টের সকল সুবিধা।</p>
           <div class="hero-buttons">
             <button class="btn btn-primary" onclick="navigateTo('books')">
               <i data-lucide="library"></i> বইসমূহ দেখুন
@@ -71,9 +71,9 @@
       <div class="stats-grid" id="home-stats">
         <!-- dynamic counters in app.js -->
       </div>
-      <!-- জনপ্রিয় বই সমূহ -->
+      <!-- জনপ্রিয় বই সমূহ -->
       <div class="section-header">
-        <h2 class="section-title">জনপ্রিয় বইসমূহ</h2>
+        <h2 class="section-title">জনপ্রিয় বইসমূহ</h2>
         <button class="btn btn-secondary" onclick="navigateTo('books')">সব দেখুন <i data-lucide="arrow-right"></i></button>
       </div>
       <div class="book-shelf" id="featured-books">
@@ -91,104 +91,31 @@
     <section id="about-route" class="route-section">
       <div class="glass-card">
         <h2 class="section-title" style="margin-bottom: 1.5rem;">আমাদের সম্পর্কে</h2>
+        <p style="margin-bottom: 1.5rem;">"লাইব্রেরি" একটি যুগোপযোগী ও ডিজিটাল গ্রন্থাগার ব্যবস্থাপনা সমাধান। আমাদের লক্ষ্য হলো বই পড়ার অভ্যাস ও সংস্কৃতির বিকাশ ঘটিয়ে জ্ঞানভিত্তিক সমাজ বিনির্মাণে ভূমিকা রাখা। প্রযুক্তির ছোঁয়ায় বই সংগ্রহ, আদান-প্রদান এবং সদস্য ব্যবস্থাপনাকে সহজতর করাই আমাদের মূল লক্ষ্য।</p>
         
-        <!-- লাইব্রেরির পূর্ণ পরিচিতি -->
-        <div style="margin-bottom: 2.5rem; padding: 1.5rem; background: rgba(0,0,0,0.1); border-radius: 12px; border-left: 5px solid #00c6ff;">
-          <h3 style="color: #00c6ff; margin-bottom: 1rem; font-size: 1.4rem;">স্পিকার আঃ জব্বার খান স্মৃতি পাবলিক লাইব্রেরি</h3>
-          <p style="margin-bottom: 0.8rem;"><strong>স্থাপিত:</strong> ০১-০১-২০০১ খ্রি.</p>
-          <p style="margin-bottom: 0.8rem;"><strong>ঠিকানা:</strong> গ্রামঃ ভূতেরদিয়া, ডাকঘরঃভূতেরদিয়া, উপজেলাঃ বাবুগঞ্জ, জেলাঃ বরিশাল</p>
-          <p style="margin-bottom: 0.8rem;"><strong>ইমেইল:</strong> sajkspla@gmail.com</p>
-          <p style="margin-top: 1.5rem; font-style: italic;">"লাইব্রেরি" একটি যুগোপযোগী ও ডিজিটাল গ্রন্থাগার ব্যবস্থাপনা সমাধান। আমাদের লক্ষ্য হলো বই পড়ার অভ্যাস ও সংস্কৃতির বিকাশ ঘটিয়ে জ্ঞানভিত্তিক সমাজ বিনির্মাণে ভূমিকা রাখা। প্রযুক্তির ছোঁয়ায় বই সংগ্রহ, আদান-প্রদান এবং সদস্য ব্যবস্থাপনাকে সহজতর করাই আমাদের মূল লক্ষ্য।</p>
-        </div>
-
-        <!-- প্রতিষ্ঠাতা ও জমিদাতা সদস্যদের তালিকা -->
-        <div style="margin-bottom: 2.5rem;">
-          <h3 style="color: #00c6ff; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid rgba(0,198,255,0.3);">প্রতিষ্ঠাতা ও জমিদাতা সদস্যগণ</h3>
-          
-          <div style="margin-bottom: 1.5rem;">
-            <h4 style="color: #38ef7d; margin-bottom: 0.8rem;">প্রতিষ্ঠাতা:</h4>
-            <div style="padding: 1rem; background: rgba(56,239,125,0.1); border-radius: 8px; border-left: 4px solid #38ef7d;">
-              <p><strong>জনাব মোঃ নরুল ইসলাম (মানিক) মৃধা</strong></p>
-              <p style="color: var(--text-muted); font-style: italic;">বিশিষ্ট সমাজ সেবক</p>
+        <div class="timeline">
+          <div class="timeline-item left-timeline">
+            <div class="timeline-content">
+              <h3>২০২০</h3>
+              <p>লাইব্রেরির যাত্রা শুরু। প্রাথমিক পর্যায়ে ১,০০০ বইয়ের অফলাইন লাইব্রেরি স্থাপন।</p>
             </div>
           </div>
-          
-          <div>
-            <h4 style="color: #ff6b6b; margin-bottom: 1rem;">জমিদাতা সদস্যগণ:</h4>
-            <div class="timeline">
-              <div class="timeline-item left-timeline">
-                <div class="timeline-content">
-                  <h3 style="color: #ff6b6b;">১।</h3>
-                  <p><strong>জনাব মোঃ রফিকুল ইসলাম (রত্তন) মৃধা</strong></p>
-                  <p style="color: var(--text-muted); font-style: italic;">বিশিষ্ট সমাজ সেবক</p>
-                </div>
-              </div>
-              <div class="timeline-item right-timeline">
-                <div class="timeline-content">
-                  <h3 style="color: #ff6b6b;">২।</h3>
-                  <p><strong>জনাব মোঃ হাবিবুর রহমান মৃধা</strong></p>
-                  <p style="color: var(--text-muted); font-style: italic;">সাবেক প্রধান শিক্ষক,সরকারি প্রাথমিক বিদ্যালয় ও সভাপতি উপজেলা সরকারি প্রাথমিক শিক্ষক সমিতি, বাবুগঞ্জ, বরিশাল</p>
-                </div>
-              </div>
-              <div class="timeline-item left-timeline">
-                <div class="timeline-content">
-                  <h3 style="color: #ff6b6b;">৩।</h3>
-                  <p><strong>জনাব মোঃ আবদুর রব মৃধা</strong></p>
-                  <p style="color: var(--text-muted); font-style: italic;">বিশিষ্ট ব্যাবসায়ী</p>
-                </div>
-              </div>
-              <div class="timeline-item right-timeline">
-                <div class="timeline-content">
-                  <h3 style="color: #ff6b6b;">৪।</h3>
-                  <p><strong>বীরমুক্তিযোদ্ধা মোঃ সাইদুর রহমান মৃধা</strong></p>
-                  <p style="color: var(--text-muted); font-style: italic;">সাবেক ভারপ্রাপ্ত প্রধান শিক্ষক, ভূতেরদিয়া মাধ্যমিক বিদ্যালয়</p>
-                </div>
-              </div>
-              <div class="timeline-item left-timeline">
-                <div class="timeline-content">
-                  <h3 style="color: #ff6b6b;">৫।</h3>
-                  <p><strong>জনাব মোঃ জাহাঙ্গীর হোসেন মৃধা</strong></p>
-                  <p style="color: var(--text-muted); font-style: italic;">সাবেক চেয়ারম্যান, ২নং কেদারপুর ইউনিয়ন পরিষদ</p>
-                </div>
-              </div>
-              <div class="timeline-item right-timeline">
-                <div class="timeline-content">
-                  <h3 style="color: #ff6b6b;">৬।</h3>
-                  <p><strong>জনাব মহিউদ্দিন আহম্মেদ (পনু) মৃধা</strong></p>
-                  <p style="color: var(--text-muted); font-style: italic;">বিশিষ্ট সমাজ সেবক</p>
-                </div>
-              </div>
+          <div class="timeline-item right-timeline">
+            <div class="timeline-content">
+              <h3>২০২২</h3>
+              <p>অনলাইন ক্যাটালগ এবং মেম্বার ডেটাবেজ ডিজিটালাইজেশন প্রকল্প গ্রহণ।</p>
             </div>
           </div>
-        </div>
-
-        <!-- লাইব্রেরির ইতিহাস -->
-        <div>
-          <h3 style="color: #00c6ff; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid rgba(0,198,255,0.3);">আমাদের যাত্রাপথ</h3>
-          <div class="timeline">
-            <div class="timeline-item left-timeline">
-              <div class="timeline-content">
-                <h3>২০০১</h3>
-                <p>স্পিকার আঃ জব্বার খান স্মৃতি পাবলিক লাইব্রেরি প্রতিষ্ঠিত হয়। প্রাথমিক পর্যায়ে ১,০০০ বইয়ের অফলাইন লাইব্রেরি স্থাপন।</p>
-              </div>
+          <div class="timeline-item left-timeline">
+            <div class="timeline-content">
+              <h3>২০২৪</h3>
+              <p>১০০% ক্লাউড-ভিত্তিক লাইব্রেরি ম্যানেজমেন্ট সিস্টেম ও সদস্য পোর্টাল উন্মোচন।</p>
             </div>
-            <div class="timeline-item right-timeline">
-              <div class="timeline-content">
-                <h3>২০১০</h3>
-                <p>অনলাইন ক্যাটালগ এবং মেম্বার ডেটাবেজ ডিজিটালাইজেশন প্রকল্প গ্রহণ।</p>
-              </div>
-            </div>
-            <div class="timeline-item left-timeline">
-              <div class="timeline-content">
-                <h3>২০২০</h3>
-                <p>১০০% ক্লাউড-ভিত্তিক লাইব্রেরি ম্যানেজমেন্ট সিস্টেম ও সদস্য পোর্টাল উন্মোচন।</p>
-              </div>
-            </div>
-            <div class="timeline-item right-timeline">
-              <div class="timeline-content">
-                <h3>২০২৪</h3>
-                <p>আধুনিক ডিজাইন, জরিমানা গণনা ও নোটিফিকেশন সহ সিস্টেমটির নতুন রূপ।</p>
-              </div>
+          </div>
+          <div class="timeline-item right-timeline">
+            <div class="timeline-content">
+              <h3>২০২৬</h3>
+              <p>আধুনিক ডিজাইন, জরিমানা গণনা ও নোটিফিকেশন সহ সিস্টেমটির নতুন রূপ।</p>
             </div>
           </div>
         </div>
@@ -215,7 +142,7 @@
         <div class="search-container">
           <div class="search-input-wrap">
             <i data-lucide="search"></i>
-            <input type="text" class="form-control" id="search-input" placeholder="বইয়ের নাম, লেখক অথবা ISBN লিখে খুঁজুন..." oninput="handleSearch()">
+            <input type="text" class="form-control" id="search-input" placeholder="বইয়ের নাম, লেখক অথবা ISBN লিখে খুঁজুন..." oninput="handleSearch()">
           </div>
           <select class="form-control filter-select" id="search-category-filter" onchange="handleSearch()">
             <option value="all">সকল ক্যাটাগরি</option>
@@ -249,7 +176,7 @@
               <input type="tel" id="reg-phone" class="form-control" required placeholder="01XXXXXXXXX">
             </div>
             <div class="form-group">
-              <label for="reg-password">পাসওয়ার্ড</label>
+              <label for="reg-password">পাসওয়ার্ড</label>
               <input type="password" id="reg-password" class="form-control" required placeholder="••••••••">
             </div>
             <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">নিবন্ধন সম্পন্ন করুন</button>
@@ -271,16 +198,16 @@
               <input type="text" id="login-email-phone" class="form-control" required placeholder="admin@library.gov.bd বা M1001">
             </div>
             <div class="form-group">
-              <label for="login-password">পাসওয়ার্ড</label>
+              <label for="login-password">পাসওয়ার্ড</label>
               <input type="password" id="login-password" class="form-control" required placeholder="••••••••">
             </div>
             <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">প্রবেশ করুন</button>
           </form>
           
           <div class="demo-credentials">
-            <h5>ডেমো ক্রেডেনশিয়াল (পরীক্ষার জন্য):</h5>
-            <p><strong>প্রশাসক (Admin):</strong><br>আইডি/ইমেইল: <code>admin</code> | পাসওয়ার্ড: <code>admin123</code></p>
-            <p style="margin-top: 0.5rem;"><strong>সাধারণ সদস্য (Member):</strong><br>আইডি/ইমেইল: <code>M1001</code> | পাসওয়ার্ড: <code>member123</code></p>
+            <h5>ডেমো ক্রেডেনশিয়াল (পরীক্ষার জন্য):</h5>
+            <p><strong>প্রশাসক (Admin):</strong><br>আইডি/ইমেইল: <code>admin</code> | পাসওয়ার্ড: <code>admin123</code></p>
+            <p style="margin-top: 0.5rem;"><strong>সাধারণ সদস্য (Member):</strong><br>আইডি/ইমেইল: <code>M1001</code> | পাসওয়ার্ড: <code>member123</code></p>
           </div>
         </div>
       </div>
@@ -304,7 +231,7 @@
           </ul>
         </aside>
         
-        <!-- মূল ড্যাশবোর্ড এরিয়া -->
+        <!-- মূল ড্যাশবোর্ড এরিয়া -->
         <div class="dashboard-content">
           
           <!-- ওভারভিউ প্যানেল -->
@@ -334,10 +261,10 @@
             </div>
             
             <div class="glass-card">
-              <h3 style="margin-bottom: 1rem;">লাইব্রেরি ব্যবহারের সাধারণ নিয়মাবলী</h3>
+              <h3 style="margin-bottom: 1rem;">লাইব্রেরি ব্যবহারের সাধারণ নিয়মাবলী</h3>
               <p>১. একজন সদস্য একসাথে সর্বোচ্চ ২টি বই সংগ্রহে রাখতে পারবেন।<br>
-              ২. প্রতিটি বই ইস্যুর মেয়াদ ১৪ দিন।<br>
-              ৩. মেয়াদ উত্তীর্ণের পর ফেরত না দিলে দৈনিক ৫ টাকা জরিমানা ধার্য করা হবে।</p>
+              ২. প্রতিটি বই ইস্যুর মেয়াদ ১৪ দিন।<br>
+              ৩. মেয়াদ উত্তীর্ণের পর ফেরত না দিলে দৈনিক ৫ টাকা জরিমানা ধার্য করা হবে।</p>
             </div>
           </div>
           
@@ -349,7 +276,7 @@
                 <table>
                   <thead>
                     <tr>
-                      <th>বইয়ের নাম</th>
+                      <th>বইয়ের নাম</th>
                       <th>ইস্যুর তারিখ</th>
                       <th>ফেরতের শেষ তারিখ</th>
                       <th>অবস্থা</th>
@@ -387,7 +314,7 @@
               <i data-lucide="shield"></i>
             </div>
             <h3>প্রশাসক প্যানেল</h3>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">সক্রিয় সেশন</p>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">সক্রিয় সেশন</p>
           </div>
           <ul class="sidebar-menu">
             <li class="active" onclick="switchAdminPanel('admin-stats')"><i data-lucide="bar-chart-2"></i> লাইব্রেরি পরিসংখ্যান</li>
@@ -407,7 +334,7 @@
             
             <div class="chart-grid">
               <div class="chart-card">
-                <h3>ক্যাটাগরিভিত্তিক বইয়ের অনুপাত</h3>
+                <h3>ক্যাটাগরিভিত্তিক বইয়ের অনুপাত</h3>
                 <div class="chart-container">
                   <canvas id="categoryChart"></canvas>
                 </div>
@@ -425,7 +352,7 @@
           <div id="admin-books-panel" class="dashboard-panel">
             <div class="glass-card">
               <div class="section-header" style="margin-bottom: 1rem;">
-                <h3>সকল বইয়ের তালিকা</h3>
+                <h3>সকল বইয়ের তালিকা</h3>
                 <button class="btn btn-primary" onclick="openAddBookModal()">
                   <i data-lucide="plus-circle"></i> নতুন বই যোগ
                 </button>
@@ -435,7 +362,7 @@
                   <thead>
                     <tr>
                       <th>আইডি</th>
-                      <th>বইয়ের নাম</th>
+                      <th>বইয়ের নাম</th>
                       <th>লেখক</th>
                       <th>ক্যাটাগরি</th>
                       <th>কপি সংখ্যা</th>
@@ -538,7 +465,7 @@
               <thead>
                 <tr>
                   <th>লেনদেন আইডি</th>
-                  <th>বইয়ের নাম</th>
+                  <th>বইয়ের নাম</th>
                   <th>ইস্যুর তারিখ</th>
                   <th>ফেরতের শেষ তারিখ</th>
                   <th>বিলম্ব দিন</th>
@@ -570,7 +497,7 @@
               <tr>
                 <th>লেনদেন আইডি</th>
                 <th>সদস্যের নাম (আইডি)</th>
-                <th>বইয়ের নাম</th>
+                <th>বইয়ের নাম</th>
                 <th>ইস্যুর তারিখ</th>
                 <th>ফেরতের তারিখ</th>
                 <th>জরিমানা</th>
@@ -592,10 +519,11 @@
           
           <div>
             <h3 style="margin-bottom: 1rem; color: #00c6ff;">অফিসের ঠিকানা</h3>
-            <p><i data-lucide="map-pin" style="display:inline-block; vertical-align:middle; margin-right: 0.5rem; color:#00c6ff;"></i> গ্রামঃ ভূতেরদিয়া, ডাকঘরঃভূতেরদিয়া, উপজেলাঃ বাবুগঞ্জ, জেলাঃ বরিশাল</p>
-            <p style="margin-top: 0.5rem;"><i data-lucide="mail" style="display:inline-block; vertical-align:middle; margin-right: 0.5rem; color:#00c6ff;"></i> sajkspla@gmail.com</p>
+            <p><i data-lucide="map-pin" style="display:inline-block; vertical-align:middle; margin-right: 0.5rem; color:#00c6ff;"></i> বাংলাদেশ জাতীয় তথ্য বাতায়ন সড়ক, ঢাকা-১২০৭</p>
+            <p style="margin-top: 0.5rem;"><i data-lucide="phone" style="display:inline-block; vertical-align:middle; margin-right: 0.5rem; color:#00c6ff;"></i> +৮৮০ ২-৯৮৭৬৫৪৩</p>
+            <p style="margin-top: 0.5rem;"><i data-lucide="mail" style="display:inline-block; vertical-align:middle; margin-right: 0.5rem; color:#00c6ff;"></i> info@library.gov.bd</p>
             
-            <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #00c6ff;">লাইব্রেরি সময়সূচী</h3>
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: #00c6ff;">লাইব্রেরি সময়সূচী</h3>
             <p>শনিবার - বুধবার: সকাল ৯:০০ - বিকাল ৫:০০<br>
             বৃহস্পতিবার: সকাল ৯:০০ - দুপুর ২:০০<br>
             শুক্রবার ও সরকারি ছুটির দিন বন্ধ।</p>
@@ -627,7 +555,7 @@
   <div class="modal-overlay" id="book-detail-modal">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 id="modal-book-title">বইয়ের শিরোনাম</h3>
+        <h3 id="modal-book-title">বইয়ের শিরোনাম</h3>
         <button class="modal-close" onclick="closeModal('book-detail-modal')">&times;</button>
       </div>
       <div class="modal-body">
@@ -637,7 +565,7 @@
           </div>
           <div>
             <h4 id="modal-book-author" style="color: #00c6ff; margin-bottom: 0.5rem;">লেখক</h4>
-            <p id="modal-book-desc" style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">বইয়ের বিবরণ</p>
+            <p id="modal-book-desc" style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">বইয়ের বিবরণ</p>
             <ul class="book-detail-meta-list">
               <li><span class="label">ক্যাটাগরি:</span> <span id="modal-book-category">...</span></li>
               <li><span class="label">ISBN:</span> <span id="modal-book-isbn">...</span></li>
@@ -664,7 +592,7 @@
         <div class="modal-body">
           <input type="hidden" id="edit-book-id">
           <div class="form-group">
-            <label for="edit-title">বইয়ের নাম</label>
+            <label for="edit-title">বইয়ের নাম</label>
             <input type="text" id="edit-title" class="form-control" required>
           </div>
           <div class="form-group">
@@ -694,16 +622,16 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="edit-desc">বইয়ের বিবরণ</label>
+            <label for="edit-desc">বইয়ের বিবরণ</label>
             <textarea id="edit-desc" class="form-control" rows="3" required></textarea>
           </div>
           <div class="form-group">
-            <label for="edit-gradient">কভারের থিম কালার (গ্রেডিয়েন্ট)</label>
+            <label for="edit-gradient">কভারের থিম কালার (গ্রেডিয়েন্ট)</label>
             <select id="edit-gradient" class="form-control" required>
               <option value="linear-gradient(135deg, #FF6B6B, #556270)">লাল ও ধূসর (Tagore Theme)</option>
-              <option value="linear-gradient(135deg, #1A2980, #26D0CE)">গাঢ় নীল ও ফিরোজা (Classic Theme)</option>
-              <option value="linear-gradient(135deg, #11998e, #38ef7d)">সবুজ গ্রেডিয়েন্ট (Nature/Sci-Fi Theme)</option>
-              <option value="linear-gradient(135deg, #8E2DE2, #4A00E0)">বেগুনী ও রয়্যাল ব্লু (Adventure Theme)</option>
+              <option value="linear-gradient(135deg, #1A2980, #26D0CE)">গাঢ় নীল ও ফিরোজা (Classic Theme)</option>
+              <option value="linear-gradient(135deg, #11998e, #38ef7d)">সবুজ গ্রেডিয়েন্ট (Nature/Sci-Fi Theme)</option>
+              <option value="linear-gradient(135deg, #8E2DE2, #4A00E0)">বেগুনী ও রয়্যাল ব্লু (Adventure Theme)</option>
               <option value="linear-gradient(135deg, #f857a6, #ff5858)">গোলাপী ও লাল (Drama Theme)</option>
               <option value="linear-gradient(135deg, #3A6073, #3A6073)">স্লেট গ্রে (Mystery/Thriller Theme)</option>
               <option value="linear-gradient(135deg, #00c6ff, #0072ff)">আকাশী ও নীল (Tech Theme)</option>
@@ -723,10 +651,10 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4 style="color: #ffffff;">আমাদের লক্ষ্য</h4>
-        <p>"স্পিকার আঃ জব্বার খান স্মৃতি পাবলিক লাইব্রেরি" বাংলাদেশের প্রতিটি নাগরিকের জন্য একটি জ্ঞানচর্চার অবাধ ডিজিটাল মাধ্যম সৃষ্টির জন্য নিবেদিত। আমরা ডিজিটাল যুগের গতি আর সাহিত্যের গভীরতাকে একত্রিত করতে সচেষ্ট।</p>
+        <p>"লাইব্রেরি" বাংলাদেশের প্রতিটি নাগরিকের জন্য একটি জ্ঞানচর্চার অবাধ ডিজিটাল মাধ্যম সৃষ্টির জন্য নিবেদিত। আমরা ডিজিটাল যুগের গতি আর সাহিত্যের গভীরতাকে একত্রিত করতে সচেষ্ট।</p>
       </div>
       <div class="footer-col">
-        <h4 style="color: #ffffff;">সহায়ক লিংক</h4>
+        <h4 style="color: #ffffff;">সহায়ক লিংক</h4>
         <ul class="footer-links">
           <li onclick="navigateTo('home')">হোম</li>
           <li onclick="navigateTo('books')">বইসমূহ</li>
@@ -736,7 +664,7 @@
       </div>
       <div class="footer-col">
         <h4 style="color: #ffffff;">সামাজিক যোগাযোগ</h4>
-        <p>আমাদের কার্যকলাপে যুক্ত থাকুন সামাজিক নেটওয়ার্কের মাধ্যমে:</p>
+        <p>আমাদের কার্যকলাপে যুক্ত থাকুন সামাজিক নেটওয়ার্কের মাধ্যমে:</p>
         <div class="social-icons">
           <a href="#" class="social-icon"><i data-lucide="facebook"></i></a>
           <a href="#" class="social-icon"><i data-lucide="twitter"></i></a>
@@ -747,8 +675,8 @@
     </div>
     
     <div class="footer-bottom">
-      <p>&copy; ২০২৬ "স্পিকার আঃ জব্বার খান স্মৃতি পাবলিক লাইব্রেরি"। সর্বস্বত্ব সংরক্ষিত।</p>
-      <p>ডিজাইন ও উন্নয়নে: সুদীপ্ত</p>
+      <p>&copy; ২০২৬ "লাইব্রেরি" সিস্টেম। সর্বস্বত্ব সংরক্ষিত।</p>
+      <p>ডিজাইন ও উন্নয়নে: সুদীপ্ত</p>
     </div>
   </footer>
   <!-- Lucide Icons CDN -->
